@@ -37,6 +37,8 @@
 
             // Previous and next. Sets the currentImageUrl based on the position of the currentImageUrl in the imageUrls array. If index is at the end of the array, reset if to browse around
             loadPrevious(){
+                if(!this.currentImageUrl)
+                    return;
                 let previousIndex = imageUrls.indexOf(this.currentImageUrl)-1
                 if(previousIndex == -1){
                     previousIndex = imageUrls.length-1
@@ -46,6 +48,8 @@
             },
 
             loadNext(){
+                if(!this.currentImageUrl)
+                    return;
                 let nextIndex = imageUrls.indexOf(this.currentImageUrl)+1
                 if(nextIndex == imageUrls.length){
                     nextIndex = 0
