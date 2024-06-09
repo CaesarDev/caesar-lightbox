@@ -77,15 +77,14 @@
                         <!-- Click area to browse left -->
                         <a class="w-[40%] h-full group relative cursor-pointer" @click.prevent="loadPrevious">
                             <!-- Button (dummy element) -->
-                            <div class="absolute left-10 bottom-10 md:top-[50%] w-16 h-16 flex items-center justify-center md:opacity-0 md:group-hover:opacity-100 transition ease-in-out duration-150 text-white bg-[#0000007d] rounded-full">
+                            <div class="absolute left-10 bottom-10 md:top-[50%] w-16 h-16 flex items-center justify-center md:opacity-0 md:group-hover:opacity-100 transition ease-in-out duration-150 text-white bg-[#0000007d] rounded-full cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
                             </div>
                         </a>
                         <!-- Click area to browse right -->
                         <a class="w-[40%] h-full group relative cursor-pointer" @click.prevent="loadNext">
                             <!--  Button (dummy element) -->
-                            <div class="absolute right-10 bottom-10 md:top-[50%] w-16 h-16 flex items-center justify-center md:opacity-0 md:group-hover:opacity-100 transition ease-in-out duration-150 text-white bg-[#0000007d] rounded-full cursor-pointer"
-                                @click="loadNext()">
+                            <div class="absolute right-10 bottom-10 md:top-[50%] w-16 h-16 flex items-center justify-center md:opacity-0 md:group-hover:opacity-100 transition ease-in-out duration-150 text-white bg-[#0000007d] rounded-full cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10  " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
                             </div>
                         </a>
